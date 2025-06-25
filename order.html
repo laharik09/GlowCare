@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffe8db;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .success-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+            border: 2px solid #4CAF50;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .success-container img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        
+        .success-container h1 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        
+        .success-container p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .success-container button {
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        
+        .success-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success-container">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/012/528/063/small_2x/verified-icon-illustration-guaranteed-stamp-or-verified-badge-trendy-design-vector.jpg" alt="Success Tick">
+        <h1>🤩Order Placed Successfully!</h1>
+        <p>Thank you for your purchase.🤗 Your order has been confirmed and will be processed shortly.</p>
+        <button onclick="window.location.href='index.html'">Continue Shopping</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script>
+        localStorage.removeItem("cart");
+        localStorage.removeItem("buyNowProduct");
+        document.addEventListener('DOMContentLoaded', () => {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: {
+                    y: 0.6
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout - GlowCare</title>
+    <STYLE>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #222;
+            margin-top: 30px;
+            font-size: 32px;
+        }
+        
+        .back-btn {
+            background: linear-gradient(45deg, #ff6090, #ff94c2);
+            border: none;
+            padding: 10px 14px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background-color: #f3a2d5;
+            color: #fff;
+        }
+        
+        .checkout-card {
+            max-width: 400px;
+            margin: 30px auto;
+            background-color: #ffe0ec;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .checkout-card img {
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .checkout-card h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .checkout-card p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .place-order {
+            background: linear-gradient(45deg, #ff6090, #ff94c2);
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .place-order:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 105, 135, 0.3);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        body {
+            animation: fadeInUp 1s ease-in-out;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <header>
+        <h1>✨GlowCare Checkout😉</h1>
+        <a href="index.html" class="back-btn">Back to Homepage</a>
+    </header>
+
+    <main id="checkout-container"></main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const product = JSON.parse(localStorage.getItem("buyNowProduct"));
+            const container = document.getElementById("checkout-container");
+
+            if (product) {
+                container.innerHTML = `
+            <div class="checkout-card">
+                <img src="${product.image}" alt="${product.name}" class="checkout-img" />
+                <h2>${product.name}</h2>
+                <p>Price: ₹${product.price}</p>
+                <button class="place-order">Place Order</button>
+            </div>
+        `;
+            } else {
+                container.innerHTML = `<p>No product selected. <a href="navi.html">Shop Now</a></p>`;
+            }
+            container.addEventListener('click', (event) => {
+
+                if (event.target.closest('.place-order')) {
+                    window.location.href = "order.html";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
