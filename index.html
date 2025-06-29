@@ -1,913 +1,594 @@
-<!doctype html> 
-<html lang="en"> 
- 
-<head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>GlowCare - Skincare Product</title> 
-    <link rel="stylesheet" href="style.css" /> 
-    <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
- " /> 
-    <script 
-src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
-    <script 
-src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></
- script> 
-    <script> 
-        gsap.registerPlugin(ScrollTrigger); 
-    </script> 
-</head> 
- 
-<body> 
-    <header> 
-        <h1 class="brand-name">GlowCare</h1> 
- 
-        <nav> 
-            <ul> 
-                <div class="search-bar"> 
-                    <input type="text" id="searchInput" placeholder="Search 
-products..." /> 
-                   <i class="fas fa-search" id="searchBtn"></i>
-                </div> 
- 
- 
-                <li><a href="#main">Home</a></li> 
-                <li><a href="#products">Products</a></li> 
-                <li><a href="#hero">Testimonials</a></li> 
-                <li><a href="#Contact">Contact</a></li> 
-                <li> 
-                    <a href="cart.html" id="cart-btn"><i class="fas 
-fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a> 
-                </li> 
- 
-            </ul> 
- 
-        </nav> 
-    </header> 
- 
-    <section> 
-        <div class="slideshow-container" id="main"> 
-            <div class="slide fade"> 
-                <img 
-src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafile
- s/ecomm/misc/1750147811_dot_n_key_sunscreen_blue_model_2596x836.jp
- eg" alt="Slide 1" /> 
-            </div> 
-            <div class="slide fade"> 
-                <img 
-src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafile
- s/ecomm/misc/1750147816_lakme_best_of_lips_2596x836.jpeg" alt="Slide 2" 
-/> 
-            </div> 
-            <div class="slide fade"> 
-                <img 
-src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafile
- s/ecomm/misc/1750147821_mars-_makeup-_blush_2596x836.jpeg" alt="Slide 
-3" /> 
-            </div> 
-            <div class="slide fade"> 
-                <img 
-src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafile
- s/ecomm/misc/1750170617_nybae_strobecream_2596x836.jpeg" alt="Slide 
-4" /> 
-            </div> 
-            <div class="slide fade"> 
-                <img 
-src="https://media6.ppl-media.com/tr:dpr-2,dpr-2/mediafiles/ecomm/misc/1737
- 282958_1298-x-418.jpg" alt="Slide 5" /> 
-            </div> 
-        </div> 
-    </section> 
- 
-    <section class="hero" id="hero"> 
-        <div class="hero-text"> 
-            <h2>Natural Skincare for Radiant Glow</h2> 
-            <p> 
-                GlowCare brings you organic, dermatologist-tested skincare 
-solutions for healthy, glowing skin. 
-            </p> 
-            <button>Shop Now</button> 
-        </div> 
-        <div class="hero-image"> 
-            <img 
-src="https://i.pinimg.com/736x/e8/68/0c/e8680c1b3af8fd78ad9b7be2551d58a
- a.jpg" alt="Product Image" /> 
-        </div> 
-    </section> 
-    <section class="features"> 
-        <h3>Why Choose GlowCare?</h3> 
-        <div class="feature-boxes"> 
-            <div class="feature"> 
-                <img 
-src="https://i.pinimg.com/736x/10/3b/3a/103b3ad41d020bb9225821b99e66ac
- c1.jpg" alt="Hydrating" /> 
-                <p>Hydrating Formula</p> 
-            </div> 
- 
-            <div class="feature"> 
-                <img 
-src="https://i.pinimg.com/736x/b4/f1/92/b4f192603b168e4fa00b40a665b019c2
- .jpg" alt="SPF" /> 
-                <p>SPF Protection</p> 
-            </div> 
-            <div class="feature"> 
-                <img 
-src="https://i.pinimg.com/736x/5f/15/de/5f15dedfe2733c320590e180341c8989
- .jpg" alt="Organic" /> 
-                <p>100% Organic</p> 
-            </div> 
-        </div> 
-    </section> 
-    <section class="products" id="products"> 
-        <h3>Our Best-Selling Products</h3> 
-        <div class="product-cards"> 
-            <div class="product-card" data-name="STROBE CREAM"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/333323/facescanada-strobe-cream-i-hyaluronic-acid-i-shea-butter-i-inst
- ant-hydration-i-flawless-radiance-i-anti-ageing-i-alcohol-free-i-vegan-i-rose-gol
- d-30-g_1_display_1736829171_aba118dd.jpg" 
-                    alt="Glow Serum" /> 
-                <h4>STROBE CREAM</h4> 
-                <p>₹419</p> 
-                <button class="buy-now" data-name="STROBE CREAM" 
-data-price="419" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/333323/facescanada-strobe-cream-i-hyaluronic-acid-i-shea-butt
- er-i-instant-hydration-i-flawless-radiance-i-anti-ageing-i-alcohol-free-i-vegan-i-r
- ose-gold-30-g_1_display_1736829171_aba118dd.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="BODY TINH CHAT CAM"> 
-                <img 
-src="https://i.pinimg.com/736x/58/44/ba/5844ba126efc28d8d2a2ebd4c9936e4
- 0.jpg" alt="Aloe Face Gel" /> 
-                <h4>BODY TINH CHAT CAM</h4> 
-                <p>₹279</p> 
-                <button class="buy-now" data-name="BODY TINH CHAT CAM" 
-data-price="279" 
-data-image="https://i.pinimg.com/736x/58/44/ba/5844ba126efc28d8d2a2ebd4
- c9936e40.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Vitamin C Cream"> 
-                <img 
-src="https://i.pinimg.com/736x/94/74/7f/94747f28b65999944cb23bdc38af1ffa.j
- pg" alt="Vitamin C Cream" /> 
-                <h4>Vitamin C Cream</h4> 
-                <p>₹214</p> 
-                <button class="buy-now" data-name="Vitamin C Cream" 
-data-price="214" 
-data-image="https://i.pinimg.com/736x/94/74/7f/94747f28b65999944cb23bdc3
- 8af1ffa.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Glow Serum"> 
-                <img 
-src="https://i.pinimg.com/736x/c6/5f/e8/c65fe8e361ee1e132574323d60ca877
- d.jpg" alt="Glow Serum" /> 
-                <h4>Glow Serum</h4> 
-                <p>₹499</p> 
-                <button class="buy-now" data-name="Glow Serum" 
-data-price="499" 
-data-image="https://i.pinimg.com/736x/c6/5f/e8/c65fe8e361ee1e132574323d6
- 0ca877d.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Aloe Face Gel"> 
-                <img 
-src="https://i.pinimg.com/736x/d9/59/c8/d959c8dcbe22cf06724dcc8c9700d72
- 9.jpg" alt="Aloe Face Gel" /> 
-                <h4>Aloe Face Gel</h4> 
-                <p>₹199</p> 
-                <button class="buy-now" data-name="Aloe Face Gel" 
-data-price="199" 
-data-image="https://i.pinimg.com/736x/d9/59/c8/d959c8dcbe22cf06724dcc8c9
- 700d729.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Sunscreen"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/395586/plum-oat-and-ceramide-complex-100-percentage-mineral-suns
- creen-spf-50-pa-no-white-cast-for-sensitive-skin-strengthens-skin-barrier-sun
-protection-from-uva-b-rays-lightweight-non-oily-men-and-women-50-gm_1_dis
- play_1740050354_d9b6445e.jpg" 
-                    alt="Sunscreen" /> 
-                <h4>Sunscreen</h4> 
-                <p>₹299</p> 
-                <button class="buy-now" data-name="Sunscreen" data-price="299" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/395586/plum-oat-and-ceramide-complex-100-percentage-miner
- al-sunscreen-spf-50-pa-no-white-cast-for-sensitive-skin-strengthens-skin-barri
- er-sun-protection-from-uva-b-rays-lightweight-non-oily-men-and-women-50-g
- m_1_display_1740050354_d9b6445e.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Shade Lipsticks"> 
-                <img 
-src="https://images-static.nykaa.com/uploads/8af78cf8-9d58-45d0-9590-bc8bf
- 8da53ed.jpg?tr=cm-pad_resize,w-300" alt="Shade Lipsticks" /> 
-                <h4>Shade Lipsticks</h4> 
-                <p>₹399</p> 
-                <button class="buy-now" data-name="Shade Lipsticks" 
-data-price="399" 
-data-image="https://images-static.nykaa.com/uploads/8af78cf8-9d58-45d0-95
- 90-bc8bf8da53ed.jpg?tr=cm-pad_resize,w-300"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Foundation"> 
-                <img 
-src="https://images-static.nykaa.com/creatives/75e8635a-0072-4aca-8b17-10
- 7197b7b012/default.jpg?tr=cm-pad_resize,w-300" alt="Foundation" /> 
-                <h4>Foundation</h4> 
-                <p>₹199</p> 
-                <button class="buy-now" data-name="Foundation" data-price="199" 
-data-image="https://images-static.nykaa.com/creatives/75e8635a-0072-4aca
-8b17-107197b7b012/default.jpg?tr=cm-pad_resize,w-300"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="BROW FREEZE GEL"> 
-                <img 
-src="https://images-static.nykaa.com/creatives/46d28daa-528b-42a1-ad4a-e4
- 128b7f7cab/default.jpg?tr=cm-pad_resize,w-300" alt="face cream" /> 
-                <h4>BROW FREEZE GEL</h4> 
-                <p>₹169</p> 
-                <button class="buy-now" data-name="BROW FREEZE GEL" 
-data-price="169" 
-data-image="https://images-static.nykaa.com/creatives/46d28daa-528b-42a1
-ad4a-e4128b7f7cab/default.jpg?tr=cm-pad_resize,w-300"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Mango Sunscreen"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/393966/dot-and-key-mango-detan-gel-sunscreen-spf-50-pa-with-alpha
-arbutin-and-niacinamide-50-gm_1_display_1743253344_7cc2b03a.jpg" 
-alt="Mango Sunscreen" /> 
-                <h4>Mango Sunscreen</h4> 
-                <p>₹199</p> 
-                <button class="buy-now" data-name="Mango Sunscreen" 
-data-price="199" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/393966/dot-and-key-mango-detan-gel-sunscreen-spf-50-pa-wit
- h-alpha-arbutin-and-niacinamide-50-gm_1_display_1743253344_7cc2b03a.jp
- g"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="matte Foundation"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-@@me
- diafiles@@mailers@@banners@@1659451450_new-tag.png,w-115,lfo-top_r
- ight,l-end,dpr-2/static/img/product/301688/faces-canada-all-day-hydra-matte-f
- oundation-i-3-in-1-matte-foundation-moisturizer-spf-30i-24-hr-aloe-hydration-a
- nd-vitamin-c-no-parabens-i-golden-beige-032_1_display_1708508230_ae478
- 268.jpg" 
-                    alt="matte Foundation" /> 
-                <h4>matte Foundation</h4> 
-                <p>₹199</p> 
-                <button class="buy-now" data-name="matte Foundation" 
-data-price="199" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i
-@@mediafiles@@mailers@@banners@@1659451450_new-tag.png,w-115,l
- fo-top_right,l-end,dpr-2/static/img/product/301688/faces-canada-all-day-hydra
-matte-foundation-i-3-in-1-matte-foundation-moisturizer-spf-30i-24-hr-aloe-hydr
- ation-and-vitamin-c-no-parabens-i-golden-beige-032_1_display_1708508230_
- ae478268.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Highlighter shades"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
-roduct/396634/insight-cosmetics-5-shades-of-shine-brick-blusher-prism-casca
- de-12-gm_1_display_1742542466_9ade7287.jpg" alt="Highlighter shades" /> 
-                <h4>Highlighter shades</h4> 
-                <p>₹219</p> 
-                <button class="buy-now" data-name="Highlighter shades" 
-data-price="219" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/396634/insight-cosmetics-5-shades-of-shine-brick-blusher-pris
- m-cascade-12-gm_1_display_1742542466_9ade7287.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Orange Sunscreen"> 
-                <img 
-src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,c
- m-pad_resize/a/c/ac621cdDOTKE00000343_1.jpg" alt="Orange Sunscreen" 
-/> 
-                <h4>Orange Sunscreen</h4> 
-                <p>₹269</p> 
-                <button class="buy-now" data-name="Orange Sunscreen" 
-data-price="269" 
-data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,
- h-220,cm-pad_resize/a/c/ac621cdDOTKE00000343_1.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="GlowUp essentials"> 
-                <img 
-src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,c
- m-pad_resize/2/e/2e6389dDOTKE00000251_1A.jpg" alt="GlowUp essentials" 
-/> 
-                <h4>GlowUp essentials</h4> 
-                <p>₹221</p> 
-                <button class="buy-now" data-name="GlowUp essentials" 
-data-price="221" 
-data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,
- h-220,cm-pad_resize/2/e/2e6389dDOTKE00000251_1A.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Kora foundation"> 
-                <img 
-src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,c
- m-pad_resize/5/6/561fc319342759005907_1.jpg" alt="Kora foundation" /> 
-                <h4>Kora foundation</h4> 
-                <p>₹99</p> 
-                <button class="buy-now" data-name="Kora foundation" 
-data-price="99" 
-data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,
- h-220,cm-pad_resize/5/6/561fc319342759005907_1.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="BEST VITAMIN C 
-SERUM(timeLess)"> 
-                <img 
-src="https://i.pinimg.com/736x/17/ab/98/17ab983f4b6fec4030d0297f92283953
- .jpg" alt="BEST VITAMIN C SERUM(timeLess)" /> 
-                <h4>BEST VITAMIN C SERUM(timeLess)</h4> 
-                <p>₹314</p> 
-                <button class="buy-now" data-name="BEST VITAMIN C 
-SERUM(timeLess)" data-price="314" 
-data-image="https://i.pinimg.com/736x/17/ab/98/17ab983f4b6fec4030d0297f9
- 2283953.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Aloe Face Gel(minsFree)"> 
-                <img 
-src="https://i.pinimg.com/736x/6b/f5/c2/6bf5c2e122d8c0219eecefc552f4118a.j
- pg" alt="Aloe Face Gel(minsFree)" /> 
-                <h4>Aloe Face Gel(minsFree)</h4> 
-                <p>₹169</p> 
-                <button class="buy-now" data-name="Aloe Face Gel(minsFree)" 
-data-price="169" 
-data-image="https://i.pinimg.com/736x/6b/f5/c2/6bf5c2e122d8c0219eecefc55
- 2f4118a.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Vitamin c spot Serum"> 
-                <img 
-src="https://i.pinimg.com/736x/92/a6/ce/92a6cef4238c213b7e11336217d58db
- c.jpg" alt="Vitamin c spot Serum" /> 
-                <h4>Vitamin c spot Serum</h4> 
-                <p>₹215</p> 
-                <button class="buy-now" data-name="Vitamin c spot Serum" 
-data-price="215" 
-data-image="https://i.pinimg.com/736x/92/a6/ce/92a6cef4238c213b7e113362
- 17d58dbc.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Coco cream"> 
-                <img 
-src="https://i.pinimg.com/736x/2e/b4/2f/2eb42f1228c3b9f98c241ae7db863052
- .jpg" alt="Coco cream" /> 
-                <h4>Coco cream</h4> 
-                <p>₹419</p> 
-                <button class="buy-now" data-name="Coco cream" 
-data-price="419" 
-data-image="https://i.pinimg.com/736x/2e/b4/2f/2eb42f1228c3b9f98c241ae7d
- b863052.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Curie Serum"> 
-                <img 
-src="https://i.pinimg.com/736x/ad/57/ff/ad57ff730efb80089635cbf3bbcf7383.jp
- g" alt="Curie Serum" /> 
-                <h4>Curie Serum</h4> 
-                <p>₹299</p> 
-                <button class="buy-now" data-name="Curie Serum" 
-data-price="299" 
-data-image="https://i.pinimg.com/736x/ad/57/ff/ad57ff730efb80089635cbf3bbc
- f7383.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Vitamin C fashwash"> 
-                <img 
-src="https://i.pinimg.com/736x/e9/8c/d5/e98cd59ca395b7f012bd2bb0ccd6e3e
- b.jpg" alt="Vitamin C fashwash" /> 
-                <h4>Vitamin C fashwash</h4> 
-                <p>₹199</p> 
-                <button class="buy-now" data-name="Vitamin C fashwash" 
-data-price="199" 
-data-image="https://i.pinimg.com/736x/e9/8c/d5/e98cd59ca395b7f012bd2bb0
- ccd6e3eb.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Banana loose powder"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_se
- ller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/prod
- uct/395083/insight-banana-loose-powder-40g-17-17-17-24_1_display_172925
- 6827_85c9e93c.jpg" alt="Banana loose powder" 
-                /> 
-                <h4>Banana loose powder</h4> 
-                <p>₹299</p> 
-                <button class="buy-now" data-name="Banana loose powder" 
-data-price="299" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/i
- mg/product/395083/insight-banana-loose-powder-40g-17-17-17-24_1_display
- _1729256827_85c9e93c.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Lightweight Sunscreen for Oily 
-skin"> 
-                <img 
-src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,c
- m-pad_resize/5/9/59870d9AQUAA00000033_1.jpg" alt="Lightweight 
-Sunscreen for Oily skin" /> 
-                <h4>Lightweight Sunscreen for Oily skin</h4> 
-                <p>₹216</p> 
-                <button class="buy-now" data-name="Lightweight Sunscreen for 
-Oily skin" data-price="216" 
-data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,
- h-220,cm-pad_resize/5/9/59870d9AQUAA00000033_1.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Derma Sunscreen"> 
-                <img 
-src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,c
- m-pad_resize/8/e/8eff0baDRSHE00000125_01.jpg" alt="Derma Sunscreen" 
-/> 
-                <h4>Derma Sunscreen</h4> 
-                <p>₹279</p> 
-                <button class="buy-now" data-name="Derma Sunscreen" 
-data-price="279" 
-data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,
- h-220,cm-pad_resize/8/e/8eff0baDRSHE00000125_01.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Bioderma Sunscreen"> 
-                <img 
-src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,c
- m-pad_resize/2/3/237fac53401561197425_1.jpg" alt="Bioderma Sunscreen" 
-/> 
-                <h4>Bioderma Sunscreen</h4> 
-                <p>₹199</p> 
-                <button class="buy-now" data-name="Bioderma Sunscreen" 
-data-price="199" 
-data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,
- h-220,cm-pad_resize/2/3/237fac53401561197425_1.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Almond hair oil"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/280945/alps-goodness-almond-hair-oil-100-ml-42_1_display_1671519
- 600_67286d90.jpg" alt="Almond hair oil" /> 
-                <h4>Almond hair oil</h4> 
-                <p>₹299</p> 
-                <button class="buy-now" data-name="Almond hair oil" 
-data-price="299" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/280945/alps-goodness-almond-hair-oil-100-ml-42_1_display_1
- 671519600_67286d90.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Lakme Facecream"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_se
- ller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/prod
- uct/394101/lakme-lumi-skin-30g_1_display_1706349867_d24b737d.jpg" 
-alt="Lakme Facecream" /> 
-                <h4>Lakme Facecream</h4> 
-                <p>₹211</p> 
-                <button class="buy-now" data-name="Lakme Facecream" 
-data-price="211" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/i
- mg/product/394101/lakme-lumi-skin-30g_1_display_1706349867_d24b737d.j
- pg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Lakme waterProof eyeliner"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_se
- ller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/prod
- uct/393265/lakme-insta-liner-water-resistant-eyeliner-9-ml-14_1_display_1708
- 684837_56a9c05b.jpg" alt="Lakme waterProof eyeliner" 
-                /> 
-                <h4>Lakme waterProof eyeliner</h4> 
-                <p>₹112</p> 
-                <button class="buy-now" data-name="Lakme waterProof eyeliner" 
-data-price="112" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/i
- mg/product/393265/lakme-insta-liner-water-resistant-eyeliner-9-ml-14_1_displ
- ay_1708684837_56a9c05b.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="LipBalm"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/p
- roduct/324017/dot-and-key-cherry-lip-balm-for-smooth-red-lips-spf-30-shea-bu
- tter-with-vitamin-e-tinted-lip-balm-for-glossy-buttery-soft-lips-for-dark-lips-12g_
- 1_display_1744106409_701412b8.jpg" 
-                    alt="LipBalm" /> 
-                <h4>LipBalm</h4> 
-                <p>₹69</p> 
-                <button class="buy-now" data-name="LipBalm" data-price="69" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/stat
- ic/img/product/324017/dot-and-key-cherry-lip-balm-for-smooth-red-lips-spf-30
-shea-butter-with-vitamin-e-tinted-lip-balm-for-glossy-buttery-soft-lips-for-dark-li
- ps-12g_1_display_1744106409_701412b8.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Lakme sun expert"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/393578/lakme-sun-expert-super-matte-lotion-sunscreen-spf-50-pa-with-niacinamide-and-vit-c-broad-spectrum-uva-b-protection-blue-light-protection
-no-white-cast-for-all-dry-normal-skin-50ml-76_1_display_1741889299_872d4
- e8e.jpg" 
-                    alt="Lakme sun expert" /> 
-                <h4>Lakme sun expert</h4> 
-                <p>₹217</p> 
-                <button class="buy-now" data-name="Lakme sun expert" 
-data-price="217" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/393578/lakme-sun-expert-super-matte-lotion-sunscreen-spf-50
-pa-with-niacinamide-and-vit-c-broad-spectrum-uva-b-protection-blue-light-prot
- ection-no-white-cast-for-all-dry-normal-skin-50ml-76_1_display_1741889299_
- 872d4e8e.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Parachute HairOil"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/392547/parachute-advansed-aloe-vera-enriched-coconut-hair-oil-gold
-5x-aloe-vera-with-coconut-oil-makes-hair-sooperr-soft-250ml-88-12-11_1_disp
- lay_1745931265_b31bdc69.jpg" 
-                    alt="Parachute HairOil" /> 
-                <h4>Parachute HairOil</h4> 
-                <p>₹116</p> 
-                <button class="buy-now" data-name="Parachute HairOil" 
-data-price="116" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/392547/parachute-advansed-aloe-vera-enriched-coconut-hair-o
- il-gold-5x-aloe-vera-with-coconut-oil-makes-hair-sooperr-soft-250ml-88-12-11_
- 1_display_1745931265_b31bdc69.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Sticky eyeliner"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/p
- roduct/247410/revolution-relove-slick-flick-eyeliner-black_1_display_16266952
- 15_5c91791f.jpg" alt="Sticky eyeliner" /> 
-                <h4>Sticky eyeliner</h4> 
-                <p>₹79</p> 
-                <button class="buy-now" data-name="Sticky eyeliner" 
-data-price="79" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/stat
- ic/img/product/247410/revolution-relove-slick-flick-eyeliner-black_1_display_1
- 626695215_5c91791f.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Eyelashes"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-172828
- 6602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/26
- 9133/ny-bae-eye-love-false-eyelashes-with-adhesive-ultimate-lashes-04_4_di
- splay_1735198458_093c8d5b.jpg" 
-                    alt="Eyelashes" /> 
-                <h4>Eyelashes</h4> 
-                <p>₹99</p> 
-                <button class="buy-now" data-name="Eyelashes" data-price="99" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/pro
- duct/269133/ny-bae-eye-love-false-eyelashes-with-adhesive-ultimate-lashes-0
- 4_4_display_1735198458_093c8d5b.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Aloe sleeping mask"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_se
- ller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/prod
- uct/263854/purplle-aloe-backyard-blend-sleeping-mask-with-aloe-vera-and-cu
- cumber-50-gm_9_display_1664793827_2f7ec3b8.jpg" 
-                    alt="Aloe sleeping mask" /> 
-                <h4>Aloe sleeping mask</h4> 
-                <p>₹129</p> 
-                <button class="buy-now" data-name="Aloe sleeping mask" 
-data-price="129" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/i
- mg/product/263854/purplle-aloe-backyard-blend-sleeping-mask-with-aloe-vera-and-cucumber-50-gm_9_display_1664793827_2f7ec3b8.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Creme Nail paint"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-172828
- 6602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/25
- 7498/ny-bae-creme-nail-paint-forest-green-05-10-ml_3_display_1674546829_
- a9a12deb.jpg" alt="Creme Nail paint" 
-                /> 
-                <h4>Creme Nail paint</h4> 
-                <p>₹56</p> 
-                <button class="buy-now" data-name="Creme Nail paint" 
-data-price="56" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/pro
- duct/257498/ny-bae-creme-nail-paint-forest-green-05-10-ml_3_display_16745
- 46829_a9a12deb.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Derma face serum"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/p
- roduct/271992/10-percentage-vitamin-c-face-serum-for-skin-radiance-30-ml-1
- 6_01_display_1713176746_90b5ca98.jpg" alt="Derma face serum" /> 
-                <h4>Derma face serum</h4> 
-                <p>₹231</p> 
-                <button class="buy-now" data-name="Derma face serum" 
-data-price="231" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/stat
- ic/img/product/271992/10-percentage-vitamin-c-face-serum-for-skin-radiance
-30-ml-16_01_display_1713176746_90b5ca98.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="Mascara"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-172828
- 6602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/26
- 3514/ny-bae-eye-love-volumizing-mascara-8ml_8_display_1734689959_8f3df
- f2c.jpg" alt="Mascara" /> 
-                <h4>Mascara</h4> 
-                <p>₹119</p> 
-                <button class="buy-now" data-name="Mascara" data-price="119" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/pro
- duct/263514/ny-bae-eye-love-volumizing-mascara-8ml_8_display_173468995
- 9_8f3dff2c.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="EyeLiner"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/p
- roduct/279039/renee-black-magic-madness-ph-stick-3g_2_display_16526129
- 61_60847d87.jpg" alt="EyeLiner" /> 
-                <h4>EyeLiner</h4> 
-                <p>₹89</p> 
-                <button class="buy-now" data-name="EyeLiner" data-price="89" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/stat
- ic/img/product/279039/renee-black-magic-madness-ph-stick-3g_2_display_16
- 52612961_60847d87.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="hydrating concealer"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-172828
- 6602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/29
- 3945/faces-canada-high-cover-concealer-i-natural-finish-i-covers-hyperpigme
- ntation-and-fine-lines-honey-creme-02-3-8-ml_1_display_1708510896_564ea
- 2f2.jpg" 
-                    alt="hydrating concealer" /> 
-                <h4>hydrating concealer</h4> 
-                <p>₹112</p> 
-                <button class="buy-now" data-name="hydrating concealer" 
-data-price="112" 
-data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i
-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/pro
- duct/293945/faces-canada-high-cover-concealer-i-natural-finish-i-covers-hype
- rpigmentation-and-fine-lines-honey-creme-02-3-8-ml_1_display_1708510896_
- 564ea2f2.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-            <div class="product-card" data-name="GoodVibes Natural Sunshield"> 
-                <img 
-src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/p
- roduct/372746/good-vibes-tinted-red-onion-sunscreen-spf-50-50g_10_display
- _1723539251_c20fe4e6.jpg" alt="GoodVibes Natural Sunshield" /> 
-                <h4>GoodVibes Natural Sunshield</h4> 
-                <p>₹211</p> 
-                <button class="buy-now" data-name="GoodVibes Natural 
-Sunshield" data-price="211" 
-data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/stat
- ic/img/product/372746/good-vibes-tinted-red-onion-sunscreen-spf-50-50g_10_
- display_1723539251_c20fe4e6.jpg"> 
-                    Buy Now 
-                </button> 
-                <button class="add-to-cart">AddTo Cart</button> 
-            </div> 
-        </div> 
-    </section> 
- 
-    <footer class="footer" id="Contact"> 
-        <div class="benefits-row"> 
-            <div class="benefit-item"> 
-                <img 
-src="https://cdn.prod.website-files.com/5ef27cb65411b70949a151e9/5fa67b3
- 76084e378d68125bc_Free%20shipping%20(1).png" alt="Free Shipping Icon" 
-/> 
- 
-                <div class="benefit-title">FREE SHIPPING</div> 
-                <div class="benefit-desc">On Orders Above £250</div> 
-            </div> 
-            <div class="benefit-item"> 
-                <img 
-src="https://www.dropoff.com/wp-content/uploads/2024/01/Returns-Managem
- ent-The-Most-Detailed-Guide-For-Retail-and-E-Commerce-in-2024-01.png" 
-alt="Easy Returns Icon" /> 
- 
-                <div class="benefit-title">EASY RETURNS</div> 
-                <div class="benefit-desc">15-Day Return Policy</div> 
-            </div> 
-            <div class="benefit-item"> 
-                <img 
-src="https://img.freepik.com/premium-vector/gold-badge-authentic-guarantee-l
- abel-logo_184560-253.jpg" alt="100% Authentic Icon" /> 
- 
-                <div class="benefit-title">100% AUTHENTIC</div> 
-                <div class="benefit-desc">Products Sourced Directly</div> 
-            </div> 
-            <div class="benefit-item"> 
-                <img 
-src="https://ft.syncfusion.com/featuretour/angular-js2/images/dashboard-layou
- t/angular-dashboard-version-compatibility.png" alt="Brands Icon" /> 
- 
-                <div class="benefit-title">1900+ BRANDS</div> 
-                <div class="benefit-desc">1.2M+ Products</div> 
-            </div> 
-        </div> 
- 
-        <div class="social-section"> 
-            <div class="social-title"> 
-                Show us some love <span>●</span> on social media 
-            </div> 
-            <div class="social-icons"> 
-                <a href="#"><i class="fab fa-instagram"></i></a> 
-                <a href="#"><i class="fab fa-facebook-f"></i></a> 
-                <a href="#"><i class="fab fa-twitter"></i></a> 
-                <a href="#"><i class="fab fa-pinterest-p"></i></a> 
-                <a href="#"><i class="fab fa-youtube"></i></a> 
-            </div> 
-        </div> 
-        <div class="policy-links"> 
-            <a href="#">Terms & Conditions</a> 
-            <a href="#">Shipping Policy</a> 
-            <a href="#">Cancellation Policy</a> 
-            <a href="#">Privacy Policy</a> 
-        </div> 
- 
-        <div class="copyright"> 
-            © 2025 NYXAA E-RETAIL LIMITED All Rights Reserved 
-        </div> 
- 
-        <div class="popular-links"> 
-            <h3>Popular Links</h3> 
-            <div class="links-container"> 
-                <a href="#">Upstick</a> 
-                <a href="#">Highlighter</a> 
-                <a href="#">Hair Serum</a> 
-                <a href="#">Concealer</a> 
-                <a href="#">Face Mask</a> 
-                <a href="#">Biclique</a> 
-                <a href="#">Lip Gloss</a> 
-                <a href="#">Perfume For Women</a> 
-                <a href="#">Facial Kit</a> 
-                <a href="#">Bb Cream</a> 
-                <a href="#">Victoria Secret</a> 
-                <a href="#">Eyeliner</a> 
-                <a href="#">Hair Mask</a> 
-                <a href="#">Face Wash For Oily Skin</a> 
-                <a href="#">Ordinary</a> 
-                <a href="#">Toner</a> 
-                <a href="#">Eyeshadow Palette</a> 
-                <a href="#">Cleanager</a> 
-                <a href="#">Chemical At Play</a> 
-                <a href="#">Masera</a> 
-                <a href="#">Loreal Professional</a> 
-                <a href="#">Hair Extensions</a> 
-                <a href="#">Clay Cream</a> 
-                <a href="#">Fogg</a> 
-                <a href="#">Lip Tint</a> 
-                <a href="#">Light Color Eye Cream</a> 
-                <a href="#">Wrap</a> 
-                <a href="#">Shower Gel</a> 
-                <a href="#">Sunscreen For Face</a> 
-                <a href="#">Insight Cosmetics</a> 
-                <a href="#">Face Foundation</a> 
-                <a href="#">Hair Removal Machine</a> 
-                <a href="#">Mac Foundation</a> 
-                <a href="#">Choker</a> 
-                <a href="#">Quid Perfume</a> 
-                <a href="#">Makeup Pouch</a> 
-                <a href="#">Gleplex</a> 
-                <a href="#">Body Mist</a> 
-                <a href="#">Wells Shampoo</a> 
-                <a href="#">Night Cream</a> 
-                <a href="#">Facewash</a> 
-                <a href="#">Nyx</a> 
-                <a href="#">Schwarzkopf Shampoo</a> 
-                <a href="#">Blue Heaven</a> 
-                <a href="#">Peel Off Mask</a> 
-                <a href="#">Best Lip Balm</a> 
-                <a href="#">Face Scrub</a> 
-                <a href="#">Catapill Face Wash</a> 
-                <a href="#">Multivitamins Tablet</a> 
-                <a href="#">Himalaya Face Wash</a> 
-                <a href="#">Garnier Face Wash</a> 
-                <a href="#">Hair Color For Women</a> 
-                 <a href="#">Ponds Face Wash</a> 
-                <a href="#">Niwea Body Lotions</a> 
-                <a href="#">Vaseline Body Lotions</a> 
-                <a href="#">Fogg Perfume</a> 
-                <a href="#">Clean And Clear Face Wash</a> 
-                <a href="#">Neutrogena Sunscreen</a> 
-                <a href="#">Pears Soaps</a> 
-                <a href="#">Hair Color For Men</a> 
-                <a href="#">Dry Cleaners</a> 
-                <a href="#">Face Serum</a> 
-            </div> 
-        </div> 
-    </footer> 
-    <script src="script.js"></script> 
-</body> 
- 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowCare - Skincare Product</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="brand-name">GlowCare</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products..." />
+            <i class="fas fa-search" id="searchBtn"></i>
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#hero">Testimonials</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a href="cart.html" id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="slideshow-container" id="main">
+            <div class="slide fade">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1750147811_dot_n_key_sunscreen_blue_model_2596x836.jpeg" alt="Slide 1" />
+            </div>
+            <div class="slide fade">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1750147816_lakme_best_of_lips_2596x836.jpeg" alt="Slide 2" />
+            </div>
+            <div class="slide fade">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1750147821_mars-_makeup-_blush_2596x836.jpeg" alt="Slide 3" />
+            </div>
+            <div class="slide fade">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1750170617_nybae_strobecream_2596x836.jpeg" alt="Slide 4" />
+            </div>
+            <div class="slide fade">
+                <img src="https://media6.ppl-media.com/tr:dpr-2,dpr-2/mediafiles/ecomm/misc/1737282958_1298-x-418.jpg" alt="Slide 5" />
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h2>Natural Skincare for Radiant Glow</h2>
+            <p>
+                GlowCare brings you organic, dermatologist-tested skincare solutions for healthy, glowing skin.
+            </p>
+            <button>Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/e8/68/0c/e8680c1b3af8fd78ad9b7be2551d58aa.jpg" alt="Product Image" />
+        </div>
+    </section>
+    <section class="features">
+        <h3>Why Choose GlowCare?</h3>
+        <div class="feature-boxes">
+            <div class="feature">
+                <img src="https://i.pinimg.com/736x/10/3b/3a/103b3ad41d020bb9225821b99e66acc1.jpg" alt="Hydrating" />
+                <p>Hydrating Formula</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://i.pinimg.com/736x/b4/f1/92/b4f192603b168e4fa00b40a665b019c2.jpg" alt="SPF" />
+                <p>SPF Protection</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.pinimg.com/736x/5f/15/de/5f15dedfe2733c320590e180341c8989.jpg" alt="Organic" />
+                <p>100% Organic</p>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <h3>Our Best-Selling Products</h3>
+        <div class="product-cards">
+            <div class="product-card" data-name="STROBE CREAM">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/333323/facescanada-strobe-cream-i-hyaluronic-acid-i-shea-butter-i-instant-hydration-i-flawless-radiance-i-anti-ageing-i-alcohol-free-i-vegan-i-rose-gold-30-g_1_display_1736829171_aba118dd.jpg"
+                    alt="Glow Serum" />
+                <h4>STROBE CREAM</h4>
+                <p>₹419</p>
+                <button class="buy-now" data-name="STROBE CREAM" data-price="419" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/333323/facescanada-strobe-cream-i-hyaluronic-acid-i-shea-butter-i-instant-hydration-i-flawless-radiance-i-anti-ageing-i-alcohol-free-i-vegan-i-rose-gold-30-g_1_display_1736829171_aba118dd.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="BODY TINH CHAT CAM">
+                <img src="https://i.pinimg.com/736x/58/44/ba/5844ba126efc28d8d2a2ebd4c9936e40.jpg" alt="Aloe Face Gel" />
+                <h4>BODY TINH CHAT CAM</h4>
+                <p>₹279</p>
+                <button class="buy-now" data-name="BODY TINH CHAT CAM" data-price="279" data-image="https://i.pinimg.com/736x/58/44/ba/5844ba126efc28d8d2a2ebd4c9936e40.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Vitamin C Cream">
+                <img src="https://i.pinimg.com/736x/94/74/7f/94747f28b65999944cb23bdc38af1ffa.jpg" alt="Vitamin C Cream" />
+                <h4>Vitamin C Cream</h4>
+                <p>₹214</p>
+                <button class="buy-now" data-name="Vitamin C Cream" data-price="214" data-image="https://i.pinimg.com/736x/94/74/7f/94747f28b65999944cb23bdc38af1ffa.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Glow Serum">
+                <img src="https://i.pinimg.com/736x/c6/5f/e8/c65fe8e361ee1e132574323d60ca877d.jpg" alt="Glow Serum" />
+                <h4>Glow Serum</h4>
+                <p>₹499</p>
+                <button class="buy-now" data-name="Glow Serum" data-price="499" data-image="https://i.pinimg.com/736x/c6/5f/e8/c65fe8e361ee1e132574323d60ca877d.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Aloe Face Gel">
+                <img src="https://i.pinimg.com/736x/d9/59/c8/d959c8dcbe22cf06724dcc8c9700d729.jpg" alt="Aloe Face Gel" />
+                <h4>Aloe Face Gel</h4>
+                <p>₹199</p>
+                <button class="buy-now" data-name="Aloe Face Gel" data-price="199" data-image="https://i.pinimg.com/736x/d9/59/c8/d959c8dcbe22cf06724dcc8c9700d729.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Sunscreen">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/395586/plum-oat-and-ceramide-complex-100-percentage-mineral-sunscreen-spf-50-pa-no-white-cast-for-sensitive-skin-strengthens-skin-barrier-sun-protection-from-uva-b-rays-lightweight-non-oily-men-and-women-50-gm_1_display_1740050354_d9b6445e.jpg"
+                    alt="Sunscreen" />
+                <h4>Sunscreen</h4>
+                <p>₹299</p>
+                <button class="buy-now" data-name="Sunscreen" data-price="299" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/395586/plum-oat-and-ceramide-complex-100-percentage-mineral-sunscreen-spf-50-pa-no-white-cast-for-sensitive-skin-strengthens-skin-barrier-sun-protection-from-uva-b-rays-lightweight-non-oily-men-and-women-50-gm_1_display_1740050354_d9b6445e.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Shade Lipsticks">
+                <img src="https://images-static.nykaa.com/uploads/8af78cf8-9d58-45d0-9590-bc8bf8da53ed.jpg?tr=cm-pad_resize,w-300" alt="Shade Lipsticks" />
+                <h4>Shade Lipsticks</h4>
+                <p>₹399</p>
+                <button class="buy-now" data-name="Shade Lipsticks" data-price="399" data-image="https://images-static.nykaa.com/uploads/8af78cf8-9d58-45d0-9590-bc8bf8da53ed.jpg?tr=cm-pad_resize,w-300">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Foundation">
+                <img src="https://images-static.nykaa.com/creatives/75e8635a-0072-4aca-8b17-107197b7b012/default.jpg?tr=cm-pad_resize,w-300" alt="Foundation" />
+                <h4>Foundation</h4>
+                <p>₹199</p>
+                <button class="buy-now" data-name="Foundation" data-price="199" data-image="https://images-static.nykaa.com/creatives/75e8635a-0072-4aca-8b17-107197b7b012/default.jpg?tr=cm-pad_resize,w-300">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="BROW FREEZE GEL">
+                <img src="https://images-static.nykaa.com/creatives/46d28daa-528b-42a1-ad4a-e4128b7f7cab/default.jpg?tr=cm-pad_resize,w-300" alt="face cream" />
+                <h4>BROW FREEZE GEL</h4>
+                <p>₹169</p>
+                <button class="buy-now" data-name="BROW FREEZE GEL" data-price="169" data-image="https://images-static.nykaa.com/creatives/46d28daa-528b-42a1-ad4a-e4128b7f7cab/default.jpg?tr=cm-pad_resize,w-300">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Mango Sunscreen">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/393966/dot-and-key-mango-detan-gel-sunscreen-spf-50-pa-with-alpha-arbutin-and-niacinamide-50-gm_1_display_1743253344_7cc2b03a.jpg" alt="Mango Sunscreen" />
+                <h4>Mango Sunscreen</h4>
+                <p>₹199</p>
+                <button class="buy-now" data-name="Mango Sunscreen" data-price="199" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/393966/dot-and-key-mango-detan-gel-sunscreen-spf-50-pa-with-alpha-arbutin-and-niacinamide-50-gm_1_display_1743253344_7cc2b03a.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="matte Foundation">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-@@mediafiles@@mailers@@banners@@1659451450_new-tag.png,w-115,lfo-top_right,l-end,dpr-2/static/img/product/301688/faces-canada-all-day-hydra-matte-foundation-i-3-in-1-matte-foundation-moisturizer-spf-30i-24-hr-aloe-hydration-and-vitamin-c-no-parabens-i-golden-beige-032_1_display_1708508230_ae478268.jpg"
+                    alt="matte Foundation" />
+                <h4>matte Foundation</h4>
+                <p>₹199</p>
+                <button class="buy-now" data-name="matte Foundation" data-price="199" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,l-image,i-@@mediafiles@@mailers@@banners@@1659451450_new-tag.png,w-115,lfo-top_right,l-end,dpr-2/static/img/product/301688/faces-canada-all-day-hydra-matte-foundation-i-3-in-1-matte-foundation-moisturizer-spf-30i-24-hr-aloe-hydration-and-vitamin-c-no-parabens-i-golden-beige-032_1_display_1708508230_ae478268.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Highlighter shades">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/396634/insight-cosmetics-5-shades-of-shine-brick-blusher-prism-cascade-12-gm_1_display_1742542466_9ade7287.jpg" alt="Highlighter shades" />
+                <h4>Highlighter shades</h4>
+                <p>₹219</p>
+                <button class="buy-now" data-name="Highlighter shades" data-price="219" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/396634/insight-cosmetics-5-shades-of-shine-brick-blusher-prism-cascade-12-gm_1_display_1742542466_9ade7287.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Orange Sunscreen">
+                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/c/ac621cdDOTKE00000343_1.jpg" alt="Orange Sunscreen" />
+                <h4>Orange Sunscreen</h4>
+                <p>₹269</p>
+                <button class="buy-now" data-name="Orange Sunscreen" data-price="269" data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/c/ac621cdDOTKE00000343_1.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="GlowUp essentials">
+                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/e/2e6389dDOTKE00000251_1A.jpg" alt="GlowUp essentials" />
+                <h4>GlowUp essentials</h4>
+                <p>₹221</p>
+                <button class="buy-now" data-name="GlowUp essentials" data-price="221" data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/e/2e6389dDOTKE00000251_1A.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Kora foundation">
+                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/6/561fc319342759005907_1.jpg" alt="Kora foundation" />
+                <h4>Kora foundation</h4>
+                <p>₹99</p>
+                <button class="buy-now" data-name="Kora foundation" data-price="99" data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/6/561fc319342759005907_1.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="BEST VITAMIN C SERUM(timeLess)">
+                <img src="https://i.pinimg.com/736x/17/ab/98/17ab983f4b6fec4030d0297f92283953.jpg" alt="BEST VITAMIN C SERUM(timeLess)" />
+                <h4>BEST VITAMIN C SERUM(timeLess)</h4>
+                <p>₹314</p>
+                <button class="buy-now" data-name="BEST VITAMIN C SERUM(timeLess)" data-price="314" data-image="https://i.pinimg.com/736x/17/ab/98/17ab983f4b6fec4030d0297f92283953.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Aloe Face Gel(minsFree)">
+                <img src="https://i.pinimg.com/736x/6b/f5/c2/6bf5c2e122d8c0219eecefc552f4118a.jpg" alt="Aloe Face Gel(minsFree)" />
+                <h4>Aloe Face Gel(minsFree)</h4>
+                <p>₹169</p>
+                <button class="buy-now" data-name="Aloe Face Gel(minsFree)" data-price="169" data-image="https://i.pinimg.com/736x/6b/f5/c2/6bf5c2e122d8c0219eecefc552f4118a.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Vitamin c spot Serum">
+                <img src="https://i.pinimg.com/736x/92/a6/ce/92a6cef4238c213b7e11336217d58dbc.jpg" alt="Vitamin c spot Serum" />
+                <h4>Vitamin c spot Serum</h4>
+                <p>₹215</p>
+                <button class="buy-now" data-name="Vitamin c spot Serum" data-price="215" data-image="https://i.pinimg.com/736x/92/a6/ce/92a6cef4238c213b7e11336217d58dbc.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Coco cream">
+                <img src="https://i.pinimg.com/736x/2e/b4/2f/2eb42f1228c3b9f98c241ae7db863052.jpg" alt="Coco cream" />
+                <h4>Coco cream</h4>
+                <p>₹419</p>
+                <button class="buy-now" data-name="Coco cream" data-price="419" data-image="https://i.pinimg.com/736x/2e/b4/2f/2eb42f1228c3b9f98c241ae7db863052.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Curie Serum">
+                <img src="https://i.pinimg.com/736x/ad/57/ff/ad57ff730efb80089635cbf3bbcf7383.jpg" alt="Curie Serum" />
+                <h4>Curie Serum</h4>
+                <p>₹299</p>
+                <button class="buy-now" data-name="Curie Serum" data-price="299" data-image="https://i.pinimg.com/736x/ad/57/ff/ad57ff730efb80089635cbf3bbcf7383.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Vitamin C fashwash">
+                <img src="https://i.pinimg.com/736x/e9/8c/d5/e98cd59ca395b7f012bd2bb0ccd6e3eb.jpg" alt="Vitamin C fashwash" />
+                <h4>Vitamin C fashwash</h4>
+                <p>₹199</p>
+                <button class="buy-now" data-name="Vitamin C fashwash" data-price="199" data-image="https://i.pinimg.com/736x/e9/8c/d5/e98cd59ca395b7f012bd2bb0ccd6e3eb.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Banana loose powder">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/395083/insight-banana-loose-powder-40g-17-17-17-24_1_display_1729256827_85c9e93c.jpg" alt="Banana loose powder"
+                />
+                <h4>Banana loose powder</h4>
+                <p>₹299</p>
+                <button class="buy-now" data-name="Banana loose powder" data-price="299" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/395083/insight-banana-loose-powder-40g-17-17-17-24_1_display_1729256827_85c9e93c.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Lightweight Sunscreen for Oily skin">
+                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/9/59870d9AQUAA00000033_1.jpg" alt="Lightweight Sunscreen for Oily skin" />
+                <h4>Lightweight Sunscreen for Oily skin</h4>
+                <p>₹216</p>
+                <button class="buy-now" data-name="Lightweight Sunscreen for Oily skin" data-price="216" data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/9/59870d9AQUAA00000033_1.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Derma Sunscreen">
+                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/e/8eff0baDRSHE00000125_01.jpg" alt="Derma Sunscreen" />
+                <h4>Derma Sunscreen</h4>
+                <p>₹279</p>
+                <button class="buy-now" data-name="Derma Sunscreen" data-price="279" data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/e/8eff0baDRSHE00000125_01.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Bioderma Sunscreen">
+                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/3/237fac53401561197425_1.jpg" alt="Bioderma Sunscreen" />
+                <h4>Bioderma Sunscreen</h4>
+                <p>₹199</p>
+                <button class="buy-now" data-name="Bioderma Sunscreen" data-price="199" data-image="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/3/237fac53401561197425_1.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Almond hair oil">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/280945/alps-goodness-almond-hair-oil-100-ml-42_1_display_1671519600_67286d90.jpg" alt="Almond hair oil" />
+                <h4>Almond hair oil</h4>
+                <p>₹299</p>
+                <button class="buy-now" data-name="Almond hair oil" data-price="299" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/280945/alps-goodness-almond-hair-oil-100-ml-42_1_display_1671519600_67286d90.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Lakme Facecream">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/394101/lakme-lumi-skin-30g_1_display_1706349867_d24b737d.jpg" alt="Lakme Facecream" />
+                <h4>Lakme Facecream</h4>
+                <p>₹211</p>
+                <button class="buy-now" data-name="Lakme Facecream" data-price="211" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/394101/lakme-lumi-skin-30g_1_display_1706349867_d24b737d.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Lakme waterProof eyeliner">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/393265/lakme-insta-liner-water-resistant-eyeliner-9-ml-14_1_display_1708684837_56a9c05b.jpg" alt="Lakme waterProof eyeliner"
+                />
+                <h4>Lakme waterProof eyeliner</h4>
+                <p>₹112</p>
+                <button class="buy-now" data-name="Lakme waterProof eyeliner" data-price="112" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/393265/lakme-insta-liner-water-resistant-eyeliner-9-ml-14_1_display_1708684837_56a9c05b.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="LipBalm">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/324017/dot-and-key-cherry-lip-balm-for-smooth-red-lips-spf-30-shea-butter-with-vitamin-e-tinted-lip-balm-for-glossy-buttery-soft-lips-for-dark-lips-12g_1_display_1744106409_701412b8.jpg"
+                    alt="LipBalm" />
+                <h4>LipBalm</h4>
+                <p>₹69</p>
+                <button class="buy-now" data-name="LipBalm" data-price="69" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/324017/dot-and-key-cherry-lip-balm-for-smooth-red-lips-spf-30-shea-butter-with-vitamin-e-tinted-lip-balm-for-glossy-buttery-soft-lips-for-dark-lips-12g_1_display_1744106409_701412b8.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Lakme sun expert">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/393578/lakme-sun-expert-super-matte-lotion-sunscreen-spf-50-pa-with-niacinamide-and-vit-c-broad-spectrum-uva-b-protection-blue-light-protection-no-white-cast-for-all-dry-normal-skin-50ml-76_1_display_1741889299_872d4e8e.jpg"
+                    alt="Lakme sun expert" />
+                <h4>Lakme sun expert</h4>
+                <p>₹217</p>
+                <button class="buy-now" data-name="Lakme sun expert" data-price="217" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/393578/lakme-sun-expert-super-matte-lotion-sunscreen-spf-50-pa-with-niacinamide-and-vit-c-broad-spectrum-uva-b-protection-blue-light-protection-no-white-cast-for-all-dry-normal-skin-50ml-76_1_display_1741889299_872d4e8e.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Parachute HairOil">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/392547/parachute-advansed-aloe-vera-enriched-coconut-hair-oil-gold-5x-aloe-vera-with-coconut-oil-makes-hair-sooperr-soft-250ml-88-12-11_1_display_1745931265_b31bdc69.jpg"
+                    alt="Parachute HairOil" />
+                <h4>Parachute HairOil</h4>
+                <p>₹116</p>
+                <button class="buy-now" data-name="Parachute HairOil" data-price="116" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/392547/parachute-advansed-aloe-vera-enriched-coconut-hair-oil-gold-5x-aloe-vera-with-coconut-oil-makes-hair-sooperr-soft-250ml-88-12-11_1_display_1745931265_b31bdc69.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Sticky eyeliner">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/247410/revolution-relove-slick-flick-eyeliner-black_1_display_1626695215_5c91791f.jpg" alt="Sticky eyeliner" />
+                <h4>Sticky eyeliner</h4>
+                <p>₹79</p>
+                <button class="buy-now" data-name="Sticky eyeliner" data-price="79" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/247410/revolution-relove-slick-flick-eyeliner-black_1_display_1626695215_5c91791f.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Eyelashes">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/269133/ny-bae-eye-love-false-eyelashes-with-adhesive-ultimate-lashes-04_4_display_1735198458_093c8d5b.jpg"
+                    alt="Eyelashes" />
+                <h4>Eyelashes</h4>
+                <p>₹99</p>
+                <button class="buy-now" data-name="Eyelashes" data-price="99" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/269133/ny-bae-eye-love-false-eyelashes-with-adhesive-ultimate-lashes-04_4_display_1735198458_093c8d5b.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Aloe sleeping mask">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/263854/purplle-aloe-backyard-blend-sleeping-mask-with-aloe-vera-and-cucumber-50-gm_9_display_1664793827_2f7ec3b8.jpg"
+                    alt="Aloe sleeping mask" />
+                <h4>Aloe sleeping mask</h4>
+                <p>₹129</p>
+                <button class="buy-now" data-name="Aloe sleeping mask" data-price="129" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-Best_seller_700x700base_gUMVzNGWt_.png,lfo-top_right,l-end,dpr-2/static/img/product/263854/purplle-aloe-backyard-blend-sleeping-mask-with-aloe-vera-and-cucumber-50-gm_9_display_1664793827_2f7ec3b8.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Creme Nail paint">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/257498/ny-bae-creme-nail-paint-forest-green-05-10-ml_3_display_1674546829_a9a12deb.jpg" alt="Creme Nail paint"
+                />
+                <h4>Creme Nail paint</h4>
+                <p>₹56</p>
+                <button class="buy-now" data-name="Creme Nail paint" data-price="56" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/257498/ny-bae-creme-nail-paint-forest-green-05-10-ml_3_display_1674546829_a9a12deb.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Derma face serum">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/271992/10-percentage-vitamin-c-face-serum-for-skin-radiance-30-ml-16_01_display_1713176746_90b5ca98.jpg" alt="Derma face serum" />
+                <h4>Derma face serum</h4>
+                <p>₹231</p>
+                <button class="buy-now" data-name="Derma face serum" data-price="231" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/271992/10-percentage-vitamin-c-face-serum-for-skin-radiance-30-ml-16_01_display_1713176746_90b5ca98.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="Mascara">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/263514/ny-bae-eye-love-volumizing-mascara-8ml_8_display_1734689959_8f3dff2c.jpg" alt="Mascara" />
+                <h4>Mascara</h4>
+                <p>₹119</p>
+                <button class="buy-now" data-name="Mascara" data-price="119" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/263514/ny-bae-eye-love-volumizing-mascara-8ml_8_display_1734689959_8f3dff2c.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="EyeLiner">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/279039/renee-black-magic-madness-ph-stick-3g_2_display_1652612961_60847d87.jpg" alt="EyeLiner" />
+                <h4>EyeLiner</h4>
+                <p>₹89</p>
+                <button class="buy-now" data-name="EyeLiner" data-price="89" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/279039/renee-black-magic-madness-ph-stick-3g_2_display_1652612961_60847d87.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="hydrating concealer">
+                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/293945/faces-canada-high-cover-concealer-i-natural-finish-i-covers-hyperpigmentation-and-fine-lines-honey-creme-02-3-8-ml_1_display_1708510896_564ea2f2.jpg"
+                    alt="hydrating concealer" />
+                <h4>hydrating concealer</h4>
+                <p>₹112</p>
+                <button class="buy-now" data-name="hydrating concealer" data-price="112" data-image="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,l-image,i-1728286602_p-exclusive_j_99ur2f3.png,lfo-top_right,l-end,dpr-2/static/img/product/293945/faces-canada-high-cover-concealer-i-natural-finish-i-covers-hyperpigmentation-and-fine-lines-honey-creme-02-3-8-ml_1_display_1708510896_564ea2f2.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+            <div class="product-card" data-name="GoodVibes Natural Sunshield">
+                <img src="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/372746/good-vibes-tinted-red-onion-sunscreen-spf-50-50g_10_display_1723539251_c20fe4e6.jpg" alt="GoodVibes Natural Sunshield" />
+                <h4>GoodVibes Natural Sunshield</h4>
+                <p>₹211</p>
+                <button class="buy-now" data-name="GoodVibes Natural Sunshield" data-price="211" data-image="https://media6.ppl-media.com/tr:h-250,w-250,c-at_max,dpr-2/static/img/product/372746/good-vibes-tinted-red-onion-sunscreen-spf-50-50g_10_display_1723539251_c20fe4e6.jpg">
+                    Buy Now
+                </button>
+                <button class="add-to-cart">AddTo Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="Contact">
+        <div class="benefits-row">
+            <div class="benefit-item">
+                <img src="https://cdn.prod.website-files.com/5ef27cb65411b70949a151e9/5fa67b376084e378d68125bc_Free%20shipping%20(1).png" alt="Free Shipping Icon" />
+
+                <div class="benefit-title">FREE SHIPPING</div>
+                <div class="benefit-desc">On Orders Above £250</div>
+            </div>
+            <div class="benefit-item">
+                <img src="https://www.dropoff.com/wp-content/uploads/2024/01/Returns-Management-The-Most-Detailed-Guide-For-Retail-and-E-Commerce-in-2024-01.png" alt="Easy Returns Icon" />
+
+                <div class="benefit-title">EASY RETURNS</div>
+                <div class="benefit-desc">15-Day Return Policy</div>
+            </div>
+            <div class="benefit-item">
+                <img src="https://img.freepik.com/premium-vector/gold-badge-authentic-guarantee-label-logo_184560-253.jpg" alt="100% Authentic Icon" />
+
+                <div class="benefit-title">100% AUTHENTIC</div>
+                <div class="benefit-desc">Products Sourced Directly</div>
+            </div>
+            <div class="benefit-item">
+                <img src="https://ft.syncfusion.com/featuretour/angular-js2/images/dashboard-layout/angular-dashboard-version-compatibility.png" alt="Brands Icon" />
+
+                <div class="benefit-title">1900+ BRANDS</div>
+                <div class="benefit-desc">1.2M+ Products</div>
+            </div>
+        </div>
+
+        <div class="social-section">
+            <div class="social-title">
+                Show us some love <span>●</span> on social media
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="policy-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Cancellation Policy</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="copyright">
+            © 2025 NYXAA E-RETAIL LIMITED All Rights Reserved
+        </div>
+
+        <div class="popular-links">
+            <h3>Popular Links</h3>
+            <div class="links-container">
+                <a href="#">Upstick</a>
+                <a href="#">Highlighter</a>
+                <a href="#">Hair Serum</a>
+                <a href="#">Concealer</a>
+                <a href="#">Face Mask</a>
+                <a href="#">Biclique</a>
+                <a href="#">Lip Gloss</a>
+                <a href="#">Perfume For Women</a>
+                <a href="#">Facial Kit</a>
+                <a href="#">Bb Cream</a>
+                <a href="#">Victoria Secret</a>
+                <a href="#">Eyeliner</a>
+                <a href="#">Hair Mask</a>
+                <a href="#">Face Wash For Oily Skin</a>
+                <a href="#">Ordinary</a>
+                <a href="#">Toner</a>
+                <a href="#">Eyeshadow Palette</a>
+                <a href="#">Cleanager</a>
+                <a href="#">Chemical At Play</a>
+                <a href="#">Masera</a>
+                <a href="#">Loreal Professional</a>
+                <a href="#">Hair Extensions</a>
+                <a href="#">Clay Cream</a>
+                <a href="#">Fogg</a>
+                <a href="#">Lip Tint</a>
+                <a href="#">Light Color Eye Cream</a>
+                <a href="#">Wrap</a>
+                <a href="#">Shower Gel</a>
+                <a href="#">Sunscreen For Face</a>
+                <a href="#">Insight Cosmetics</a>
+                <a href="#">Face Foundation</a>
+                <a href="#">Hair Removal Machine</a>
+                <a href="#">Mac Foundation</a>
+                <a href="#">Choker</a>
+                <a href="#">Quid Perfume</a>
+                <a href="#">Makeup Pouch</a>
+                <a href="#">Gleplex</a>
+                <a href="#">Body Mist</a>
+                <a href="#">Wells Shampoo</a>
+                <a href="#">Nuda Beauty Foundation</a>
+                <a href="#">Night Cream</a>
+                <a href="#">Facewash</a>
+                <a href="#">Nyx</a>
+                <a href="#">Schwarzkopf Shampoo</a>
+                <a href="#">Blue Heaven</a>
+                <a href="#">Peel Off Mask</a>
+                <a href="#">Best Lip Balm</a>
+                <a href="#">Face Scrub</a>
+                <a href="#">Catapill Face Wash</a>
+                <a href="#">Medema Cream</a>
+                <a href="#">Multivitamins Tablet</a>
+                <a href="#">Himalaya Face Wash</a>
+                <a href="#">Garnier Face Wash</a>
+                <a href="#">Hair Color For Women</a>
+                <a href="#">Catapill Moisturizers</a>
+                <a href="#">Ponds Face Wash</a>
+                <a href="#">Streex Hair Serum</a>
+                <a href="#">Niwea Body Lotions</a>
+                <a href="#">Vaseline Body Lotions</a>
+                <a href="#">Fogg Perfume</a>
+                <a href="#">Clean And Clear Face Wash</a>
+                <a href="#">Neutrogena Sunscreen</a>
+                <a href="#">Pears Soaps</a>
+                <a href="#">Hair Color For Men</a>
+                <a href="#">Dry Cleaners</a>
+                <a href="#">Face Serum</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>
