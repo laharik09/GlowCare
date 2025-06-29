@@ -66,15 +66,24 @@ function showSlides() {
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartCountEl = document.getElementById("cart-count");
+const cartCountElMobile = document.getElementById("cart-count-mobile");
 
 function updateCartCount() {
-    cartCountEl.textContent = cart.reduce((a, c) => a + c.quantity, 0);
+    const count = cart.reduce((a, c) => a + c.quantity, 0);
+    cartCountEl.textContent = count;
+    cartCountElMobile.textContent = count;
 }
+
 updateCartCount();
 
 document.getElementById("cart-btn").addEventListener("click", () => {
     window.location.href = "cart.html";
 });
+
+document.getElementById("cart-btn-mobile").addEventListener("click", () => {
+    window.location.href = "cart.html";
+});
+
 
 document.querySelectorAll(".add-to-cart").forEach(button => {
     button.addEventListener("click", () => {
@@ -85,32 +94,25 @@ document.querySelectorAll(".add-to-cart").forEach(button => {
 
         const existing = cart.find(item => item.title === title);
         if (existing) {
-            existing.quantity += 1;
+            existing.quantity++;
         } else {
-            cart.push({
-                title,
-                price: parseFloat(price.replace('₹', '')),
-                img,
-                quantity: 1,
-            });
+            cart.push({ title, price, img, quantity: 1 });
         }
 
         localStorage.setItem("cart", JSON.stringify(cart));
         updateCartCount();
-        console.log("Cart contents:", cart);
+        alert(`${title} has been added to your cart!`);
     });
 });
 
-const buyNowButtons = document.querySelectorAll(".buy-now");
-
-buyNowButtons.forEach((button) => {
+document.querySelectorAll(".buy-now").forEach(button => {
     button.addEventListener("click", () => {
         const product = {
             name: button.dataset.name,
-            price: parseFloat(button.dataset.price),
+            price: button.dataset.price,
             image: button.dataset.image,
+            quantity: 1
         };
-
         localStorage.setItem("buyNowProduct", JSON.stringify(product));
         window.location.href = "checkout.html";
     });
@@ -133,5 +135,17 @@ function filterProducts() {
         }
     });
 }
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenu = document.getElementById("close-menu");
+
+menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+});
+
 searchBtn.addEventListener("click", filterProducts);
 searchInput.addEventListener("keyup", filterProducts);
